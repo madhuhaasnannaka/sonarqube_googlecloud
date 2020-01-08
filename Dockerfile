@@ -28,6 +28,6 @@ RUN chmod +x launch.sh
 COPY launch.sh /
 
 WORKDIR ${SONARQUBE_SCANNER_HOME}
-RUN chmod +x launch.sh
+
 
 ENTRYPOINT ["/launch.sh"]
