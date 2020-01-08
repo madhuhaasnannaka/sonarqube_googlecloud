@@ -23,8 +23,7 @@ RUN apk update \
 
 ENV PATH $PATH:$SONARQUBE_SCANNER_BIN
 
-COPY bin/docker-entrypoint.sh /docker-entrypoint.sh
-RUN chmod +x /docker-entrypoint.sh
+RUN chmod +x launch.sh
 
 COPY launch.sh /
 
