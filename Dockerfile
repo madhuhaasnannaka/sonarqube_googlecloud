@@ -22,6 +22,9 @@ RUN apk update \
 
 
 ENV PATH $PATH:$SONARQUBE_SCANNER_BIN
+COPY conf/passbolt.conf /etc/nginx/conf.d/default.conf
+COPY bin/docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
 
 COPY launch.sh /
 
