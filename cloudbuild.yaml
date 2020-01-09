@@ -3,15 +3,15 @@ steps:
   args: 
   - 'build'
   - '--build-arg'
-  - 'SONARQUBE_SCANNER_CLI_VERSION=3.2.0.1227'
+  - 'SONARQUBE_SCANNER_CLI_VERSION=4.2'
   - '-t'
   - 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
   - '-t'
-  - 'gcr.io/$PROJECT_ID/sonar-scanner:3.2.0.1227'
+  - 'gcr.io/$PROJECT_ID/sonar-scanner:4.2'
   - '.'
 
 images: 
 - 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
-- 'gcr.io/$PROJECT_ID/sonar-scanner:3.2.0.1227'
+- 'gcr.io/$PROJECT_ID/sonar-scanner:4.2'
 
 tags: ['cloud-builders-community']
